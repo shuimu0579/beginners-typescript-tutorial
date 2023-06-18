@@ -1,16 +1,6 @@
 import { expect, it } from "vitest";
 
-// interface Obj {
-//   first: number;
-//   second: number;
-// }
-
-type Obj = {
-  first: number;
-  second: number;
-};
-
-export const addTwoNumbers = (params: Obj) => {
+export const addTwoNumbers = (params) => {
   return params.first + params.second;
 };
 

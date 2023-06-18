@@ -1,28 +1,12 @@
 import { expect, it } from "vitest";
 
-// catch (e: any) {
-//   return e.message;
-// }
-
-// catch (e) {
-//   return (e as Error).message;
-// }
-
-// catch (e) {
-//   if (e instanceof Error) {
-//     return e.message;
-//   }
-// }
-
 const tryCatchDemo = (state: "fail" | "succeed") => {
   try {
     if (state === "fail") {
       throw new Error("Failure!");
     }
   } catch (e) {
-    if (e instanceof Error) {
-      return e.message;
-    }
+    return e.message;
   }
 };
 

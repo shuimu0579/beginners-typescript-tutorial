@@ -1,18 +1,7 @@
 import { expect, it } from "vitest";
 
 const createCache = () => {
-  // const cache = {};
-
-  // interface Async {
-  //   [index: string]: string;
-  // }
-  // const cache: Async = {};
-
-  const cache: Record<string, string> = {};
-
-  // const cache: {
-  //   [index: string]: string;
-  // } = {};
+  const cache = {};
 
   const add = (id: string, value: string) => {
     cache[id] = value;

@@ -1,11 +1,6 @@
 import { expect, it } from "vitest";
 
-interface Obj {
-  first: string;
-  last?: string;
-}
-
-export const getName = (params: Obj) => {
+export const getName = (params: { first: string; last: string }) => {
   if (params.last) {
     return `${params.first} ${params.last}`;
   }
